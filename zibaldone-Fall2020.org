@@ -8,6 +8,7 @@
 **** at some point I'll build a web interface for it and deal with persistency.
 
 * [Gripes] <2020-08-31 ב' 13:51>
+
 ** As always with a new setup
 *** Emacs
 **** how to see a command or event history?
@@ -20,3 +21,28 @@
 *** Physical Layout
 **** good
 **** bad
+** Problems encountered and created during setup
+*** Edwina shadows M-RET from org-mode >:[
+* Blooms for later cross-sections
+** Functionalities
+*** note-taking
+    emacs: org-capture
+    nk: [TAB] start typing
+*** Overview
+**** Plan
+**** Reference
+**** Dashboard
+*** Principles
+
+**** Mandala
+**** Scales present
+***** At miminum, present context and previous context stack
+      emacs:*
+** Data Artifacts
+**** Presentation
+**** Manipulation
+**** Structure
+** Usage Scenarios
+[[file+emacs:///home/user/zibaldone-Fall2020.org][Zibaldone]]
+[[Zibaldne]]
+[[*Usage Scenarios][Usage Scenarios]]

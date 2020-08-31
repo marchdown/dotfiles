@@ -1,0 +1,28 @@
+* >Splice prelude here
+** Side-Notes
+*** Side-log for /how do I splice a buffer here or link to a file?/ :expand:
+[[org://~/zibaldone-Fall2020.org/Principles][Principles]]
+
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c C-l") 'org-insert-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+
+;; follow link
+;; insert link
+[[*Side-log for /how do I splice a buffer here or link to a file?/][Side-log]]
+
+***** At miminum, present context and previous context stack
+      emacs:
+
+** TODO "Popping" focused objects: DWIM, C-c C-c, &c
+
+***** At miminum, present context and previous context stack
+      emacs:
+
+
+
+
+
+
+**
