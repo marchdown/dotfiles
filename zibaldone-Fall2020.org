@@ -1,3 +1,15 @@
+* This is my working journal.
+This is the main file which holds notes from the last day of August 2020 until whenever, perhaps several weeks or months' worth by this point.
+
+** Mandala <2020-08-31 ב' 21:05>
+*** I have a vision of a spatial, graphical, computable, self-referential, self-hosting system
+**** Components to work on
+**** Routines, What I'm used to , What I want to do
+** Top-level Org Trees with executable 'links' to different perspectives.
+** >Notes
+[[file+emacs:~/Yandex.Disk/org/note.org][/]]
+** Mouse-less constraints
+
 * [> Splice Org/Preamble/Zibaldone] <2020-08-31 ב' 13:23>
 
 
@@ -11,9 +23,19 @@
 
 ** As always with a new setup
 *** Emacs
-**** how to see a command or event history?
-**** why is the help command not on C-h or C-x h?
+**** TODO how to see a command or event history?
+**** TODO why is the help command not on C-h or C-x h?
+     it is on f1 which is enough.
 *** git
+    how to structure my git repos?
+    dotfiles -> has .emacs.d as a submodule
+                    .emacs.d is cloned from github.com/overtone/emacs-live
+             -> has Zibaldone.org, Notes.org,
+             -> emacs config in `live-packs/marchdown-circe-pack`
+                -> init.el
+                  -> config/registers.el
+                  -> config...
+
 *** Ubuntu
 **** Session config
 ***** keyboard
@@ -46,3 +68,229 @@
 [[file+emacs:///home/user/zibaldone-Fall2020.org][Zibaldone]]
 [[Zibaldne]]
 [[*Usage Scenarios][Usage Scenarios]]
+* Session, let's say, Five, <2020-08-31 ב' 19:29>
+* TODO fix:
+*** M-RET org/edwina conflict
+Org uses C-c RET
+*** TODO config/session.el
+**** Make a cheatsheet for edwin-eybrowse-session equivalents.
+*** dotfiles & emacs repos: old and new
+**** TODO Clone old emacs repo, make a new branch, copy present data into it, commit, push.
+*** How to make these bindings?
+*** Can I store a link globally?`
+
+*** DONE Edwina <> Eyebrowse responsibility separation.
+Edwina gets PANES, LAYOUT, it can CLONE windows, stack windows in the MASTER AREA, and cycle through them.
+Rundown:
+  - Arrange
+    - force windows into layout r
+  - Clone ???:    c
+  - next window:  n
+  - prev window:  p
+  -
+
+Eyebrowse can
+  - CREATE A WINDOW CONFIG (??)
+     - (kill last one: ")
+     - last-config:  '
+     - create-window-config (longhand)
+     - prev:      <
+     - next:      >
+     - rename:    ,
+     - switch:    .
+     - 0..9:      switch to N or clone the present config into N if there's nothing.
+
+*** Edwina bindings:
+edwina-arrange                C-c C-w r, C-c C-w C-r, M-r
+   Arrange PANES according to Edwina's current layout.
+edwina-clone-window           C-c C-w c, C-c C-w C-c, M-S-RET, <M-S-return>
+   Clone selected window.
+edwina-dec-mfact              C-c C-w %, C-c C-w {, C-c C-w [, M-h
+   Decrease the size of the master area.
+edwina-dec-nmaster            C-c C-w d, C-c C-w C-d, M-d
+   Decrease the number of windows in the master area.
+edwina-delete-window          C-c C-w k, C-c C-w C-k, M-S-c, M-C
+   Delete WINDOW.
+edwina-inc-mfact              C-c C-w ^, C-c C-w }, C-c C-w ], M-l
+   Increase the size of the master area.
+edwina-inc-nmaster            C-c C-w i, M-i
+   Increase the number of windows in the master area.
+edwina-mode                   M-x ... RET
+   Toggle Edwina mode on or off.
+edwina-select-next-window     C-c C-w n, C-c C-w C-n, C-c C-w SPC, M-j
+   Move cursor to the next window in cyclic order.
+edwina-select-previous-window C-c C-w p, C-c C-w C-p, M-k
+   Move cursor to the previous window in cyclic order.
+edwina-swap-next-window       C-c C-w N, C-c C-w C-S-n, M-S-j, M-J
+   Swap the selected window with the next window.
+edwina-swap-previous-window   C-c C-w P, C-c C-w C-S-p, M-S-k, M-K
+   Swap the selected window with the previous window.
+edwina-zoom                   C-c C-w RET, C-c C-w <return>, M-RET, <M-return>
+   Zoom/cycle the selected window to/from master area.
+
+*** Eybrowse keys
+eyebrowse-close-window-config C-c C-w "
+   Close the current window config.
+eyebrowse-create-window-config M-x ... RET
+   Creates a window config at a yet unoccupied slot.
+eyebrowse-last-window-config  C-c C-w '
+   Switch to the last window config.
+eyebrowse-mode                M-x ... RET
+n   Toggle `eyebrowse-mode'.
+eyebrowse-next-window-config  C-c C-w >
+   Switch to the next available window config.
+eyebrowse-prev-window-config  C-c C-w <
+   Switch to the previous available window config.
+eyebrowse-rename-window-config C-c C-w ,
+   Rename the window config at SLOT to TAG.
+eyebrowse-switch-to-window-config C-c C-w .
+   Switch to the window config SLOT.
+eyebrowse-switch-to-window-config-0 C-c C-w 0
+   Switch to window configuration 0.
+eyebrowse-switch-to-window-config-1 C-c C-w 1
+   Switch to window configuration 1.
+eyebrowse-switch-to-window-config-2 C-c C-w 2
+   Switch to window configuration 2.
+eyebrowse-switch-to-window-config-3 C-c C-w 3
+   Switch to window configuration 3.
+eyebrowse-switch-to-window-config-4 C-c C-w 4
+   Switch to window configuration 4.
+eyebrowse-switch-to-window-config-5 C-c C-w 5
+   Switch to window configuration 5.
+eyebrowse-switch-to-window-config-6 C-c C-w 6
+   Switch to window configuration 6.
+eyebrowse-switch-to-window-config-7 C-c C-w 7
+   Switch to window configuration 7.
+eyebrowse-switch-to-window-config-8 C-c C-w 8
+   Switch to window configuration 8.
+eyebrowse-switch-to-window-config-9 C-c C-w 9
+   Switch to window configuration 9.
+
+
+* Session Six, Persist Edwina Configuration.
+
+** Functionality:
+
+*** Spawn Sibling
+    - Emacs/Org: C-c RET
+    - Emacs/Edwina-Eyebrowse
+
+*** Spawn Child
+    Edwina: prefix+c
+
+**** Semantics:
+
+***** TODO Edwina:
+      - make a new window within the current window arrangement.
+        - it can be cycled, zoomed, &c
+        - windows don't have children.
+        - windows can be saved to registers
+          `window-configuration-to-register` C-x r w
+          - but this thing does not have an insertable/executable repr
+          - unclear how persistent it is. Is is persisted *now*?
+          - how do I flush my registers to persist in the next session?
+
+***** Neyrokod:
+      - make a new node in a tree of nodes
+        > QQ do we have a tree of nodes in Emacs somewhere?
+          >> I'll make a new org document to explore this topic. I'll put a link here.
+      - make it a child of the present ones
+
+*** Spawn a template
+
+*** Splice a Portal
+
+** Mystery bindings
+   Ctrl-ret in org-mode
+
+* Session Seven,
+** How Do I see Frequent Commands and Idle Keys?
+** How Do I apply window/frame patterns to directories and structured files to spawn a bunch of buffers in a specified layout?
+** How Do I set background color and font size separately per window (and not per buffer) (or perhaps per buffer)
+*** How to set buffer background color progammatically?
+*** How to access, present, visualize, manipulate the list of buffers?
+
+* Isn't it time to splice my Org tree?
+** Circe -- most of present stuff goes there
+** Questions about Emacs
+*** Org mode
+*** Persistency
+*** TODO Version Control
+*** Window/pane/buffer/workplace management
+**** TODO Read Up on Desktop
+****  doing right now <2020-08-31 ב' 22:24>
+
+* Session Nine <2020-08-31 ב' 23:19>
+** Focus: desktops.
+** TODO Upcoming:
+*** Git
+**** push emacs changes
+**** add .emacs.d as a submodule to dotfiles
+**** TODO something something lein clojure something re-frame template
+**** TODO Submodules <2020-09-01 ג' 02:02>
+     figure out how they work
+     add add my live pack as a sub to either dotfiles, or, better, to .emacs.d.
+*** Org mode
+**** Portals
+**** Bindings
+**** Globals
+**** Function Keys
+**** Agenda
+*** DSL
+*** Clojure
+**** Re-Frame iterations
+***** Render Metascape components from pseudocode/dsl
+***** Render them in Emacs too.
+*** Metascape Design
+*** Life
+**** Budget
+**** Plans
+**** Metaphysics
+**** Contexts
+**** Narratives
+**** Opportunities
+**** Obligations
+** TODO Dark corners of Emacs
+*** imenu on C-x Tab seems like it might be fundamental to some usage scenarios.
+*** Overtone itself
+*** Graphics
+**** Interactives
+**** Visualizations for external rendering
+* DONE Bragging:
+ everything works!
+ - Emacs
+ - session persistence
+   - with tagging
+   - I can save a session!
+ - Git
+  - make a repo on github
+  - set it as origin in Magit
+  - add a submodule in dotfiles or even emacs-live
+* Clojure <2020-09-01 ג' 01:43>
+** Plan:
+open project Directory.
+ run REPL
+ run App
+ debug Problems
+*** <2020-09-01 ג' 01:56>
+installing NPM
+java barfs with a weird error
+
+ try:
+  a textbook
+  exercism
+  cookbook
+
+ cloning other projects
+
+
+***  - cloning
+    todomvc
+    re-frame
+    re-com
+
+***   - templating
+    re-frame
+    devcards
+    quil
+    ...

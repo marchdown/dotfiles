@@ -9,6 +9,7 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 
 ;; follow link
+
 ;; insert link
 [[*Side-log for /how do I splice a buffer here or link to a file?/][Side-log]]
 
@@ -26,3 +27,34 @@
 
 
 **
+
+* <2020-08-31 ב' 22:20>
+
+** Template
+   > splice context here. Hide it in :meta.
+   context should contain... perhaps the whole /desktop/ layout.
+   certainly the parent layout and sequence of steps that got me here.
+   - edit events
+   - compute/transform/pull/summarize/change repr.
+
+** Confusing things that pop up sometimes
+
+*** <2020-08-31 ב' 22:22>
+
+ - undo tree!
+ - double cursors
+
+* TODO <2020-08-31 ב' 22:39> paredit
+
+** How do I jump between sexps, move around, slurp, barf &c ?
+
+** Now would be a good time to restore a saved desktop configuration
+
+** <2020-08-31 ב' 23:52>
+git submodule troubles
+
+  1 git … submodule add --name marchdown-circe-pack git@github.com:marchdown/emacs-live-pack.git ~/.live-packs/marchdown-circe-pack/.git
+
+Let's check the Internet
+
+* <2020-09-01 ג' 01:21>2
