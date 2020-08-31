@@ -1,0 +1,22 @@
+* [> Splice Org/Preamble/Zibaldone] <2020-08-31 ב' 13:23>
+
+
+** This is my writing space for now.
+
+*** I need it accessible so I'll put it under version control
+
+**** at some point I'll build a web interface for it and deal with persistency.
+
+* [Gripes] <2020-08-31 ב' 13:51>
+** As always with a new setup
+*** Emacs
+**** how to see a command or event history?
+**** why is the help command not on C-h or C-x h?
+*** git
+*** Ubuntu
+**** Session config
+***** keyboard
+***** Startup
+*** Physical Layout
+**** good
+**** bad
