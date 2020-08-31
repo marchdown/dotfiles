@@ -1,1 +1,2 @@
-sudo setxkbmap us -variant colemak -option ctrl:swapcaps
+#!/bin/bash
+setxkbmap us -variant colemak -option ctrl:swapcaps
