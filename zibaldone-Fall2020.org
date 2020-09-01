@@ -224,8 +224,8 @@ eyebrowse-switch-to-window-config-9 C-c C-w 9
 ** Focus: desktops.
 ** TODO Upcoming:
 *** Git
-**** push emacs changes
-**** add .emacs.d as a submodule to dotfiles
+**** DONE push emacs changes
+**** DONE add .emacs.d as a submodule to dotfiles
 **** TODO something something lein clojure something re-frame template
 **** TODO Submodules <2020-09-01 ג' 02:02>
      figure out how they work
@@ -235,7 +235,7 @@ eyebrowse-switch-to-window-config-9 C-c C-w 9
 **** Bindings
 **** Globals
 **** Function Keys
-**** Agenda
+**** TODO Agenda
 *** DSL
 *** Clojure
 **** Re-Frame iterations
@@ -256,6 +256,8 @@ eyebrowse-switch-to-window-config-9 C-c C-w 9
 *** Graphics
 **** Interactives
 **** Visualizations for external rendering
+*** TODO Bookmark+
+https://www.emacswiki.org/emacs/BookmarkPlus
 * DONE Bragging:
  everything works!
  - Emacs
@@ -267,7 +269,7 @@ eyebrowse-switch-to-window-config-9 C-c C-w 9
   - set it as origin in Magit
   - add a submodule in dotfiles or even emacs-live
 * Clojure <2020-09-01 ג' 01:43>
-** Plan:
+** DONE <2020-09-01 ג' 05:02> Plan:.
 open project Directory.
  run REPL
  run App
@@ -294,3 +296,75 @@ java barfs with a weird error
     devcards
     quil
     ...
+
+* UI Note: <2020-09-01 ג' 03:34>
+would be fun to paste structured data and have all the fields fit in.
+
+* Signoff for tonight <2020-09-01 ג'>
+
+** Braindump:
+
+*** Computers
+ keys for tree management in org mode are crap.
+ there are some advanced facilities
+ that need configuration and thoughtful rebinging
+  - links
+  - undo tree
+  - Agenda
+  - time/status/tag tracking
+  - splicing Trees
+
+  - Splicing buffers!
+
+ exercism is cool
+
+ the guy who wrote re-frame-utils could have published some example Codes
+
+ it seems to move things a bit when I set a goal and *work towards it*.
+ break it down into small pieces that can be acted on.
+
+ I should recreate my design and build a few working modules
+
+ - displaying edn as a div, sketching spec
+  - figure out addressing
+ - creating containers from web interface
+   - trace event flow
+   - figure out subscription graph
+   - make some example data and fiddle around with subscriptions
+   - try grid component
+     - adapt one from React
+ - text input
+ - figure out persistency
+
+ - flex layouts
+ - graphics
+   - canvas
+   - svg
+   - webgl
+   - thick Libraries
+   - d3.js
+
+ - going in the other direction, what display options do I see?
+   - framebuffer
+   - GL layer
+   - WM Windows, I could use StumpWM, anything that links with emacs or clojure.
+   - emacs frames
+   - full-blown widget library like Qt
+     - explore alternatives
+       -JUCE?
+       -Apple Stuff.
+         - SceneKit
+         - Metal
+         - ARKit
+   - full-blown graphics engines
+     - 3D
+       - Unreal
+       - Unity3D
+         - Arcadia
+
+*** Life
+ - Yossi
+ - Boards
+ - Reckon
+ - Move
+ - Recover the reactor

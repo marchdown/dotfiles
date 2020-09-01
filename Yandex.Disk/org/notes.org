@@ -58,3 +58,11 @@ git submodule troubles
 Let's check the Internet
 
 * <2020-09-01 ג' 01:21>2
+
+* <2020-09-01 ג' 02:23>
+
+** TODO [link to the context, should be a Desktop pointer]
+[[file+emacs:./emacs.desktop.org.inversion.example1][inversion, desktop context]]
+
+*** Now, how to load it?
+as an argument to desktop-read
